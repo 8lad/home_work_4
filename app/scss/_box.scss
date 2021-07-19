@@ -1,0 +1,32 @@
+.box {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__item {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        background: #7E8AEB;
+        &::after,
+        &::before {
+            content: '';
+            z-index: -1;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+        }
+        &::before {
+            background: #FF8888;
+            top: -60%;
+            left: -60%;
+        }
+        &::after {
+            background: #4DEF99;
+            top: 60%;
+            left: 60%;
+        }
+    }
+}

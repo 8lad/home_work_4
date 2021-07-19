@@ -1,0 +1,41 @@
+.cards {
+    background-color: #0d5825;
+    max-width: 600px;
+    width: 100%;
+    margin: 50px auto;
+    color: #fff;
+    position: relative;
+    min-height: 650px;
+    font-size: 25px;
+    &__quote {
+        text-align: center;
+        padding: 50px 20px 10px;
+        margin-bottom: 40px;
+        p {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        span {
+            font-style: italic;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        max-width: 150px;
+        transition: margin-top .5s;
+    }
+    &__img--front {
+        transform: rotate(5deg) translate(-10%, -40%);
+    }
+    &__img--middle {
+        transform: rotate( -14deg) translate(-24%, -53%);
+    }
+    &__img--back {
+        transform: rotate( -27deg) translate(-26%, -64%);
+    }
+    &__img:hover {
+        margin-top: -15px;
+    }
+}

@@ -1,0 +1,43 @@
+.action {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto 70px;
+    position: relative;
+    &__box {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 0;
+        left: 0;
+        background: #E90001;
+        animation: moving 5s ease infinite;
+    }
+}
+
+@keyframes moving {
+    0% {
+        top: 0;
+        left: 0;
+        background: #E90001;
+    }
+    25% {
+        top: calc(100% - 100px);
+        left: 0;
+        background: #0400EF;
+    }
+    50% {
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+        background: #179D03;
+    }
+    75% {
+        top: 0;
+        left: calc(100% - 100px);
+        background: #F9EE08;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        background: #E90001;
+    }
+}
